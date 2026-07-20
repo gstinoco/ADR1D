@@ -1,0 +1,67 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+================================================================
+
+Copyright (c) 2026
+
+Gerardo Tinoco-Guerrero
+Francisco J. Domínguez-Mota
+J. Alberto Guzmán-Torres
+
+Licensed material
+-----------------
+
+Unless a file or section is expressly excluded below, the following original
+materials are licensed under the Creative Commons Attribution 4.0
+International license:
+
+- data_processed/synthetic_adr1d_scenarios.csv
+- data_processed/synthetic_adr1d_field.csv
+- data_processed/synthetic_adr1d_sensor_observations.csv
+- the original text, tables, equations, and documentation in README.md
+
+Under CC BY 4.0, the licensed material may be shared and adapted for any
+purpose, including commercial use, provided that users give appropriate
+credit, link to the license, and indicate whether changes were made. Attribution
+must not imply endorsement by the authors or their institutions.
+
+The complete license terms are available at:
+
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+A human-readable summary is available at:
+
+https://creativecommons.org/licenses/by/4.0/
+
+Recommended attribution
+-----------------------
+
+Tinoco-Guerrero, G.; Domínguez-Mota, F. J.; Guzmán-Torres, J. A.;
+Pedraza-Jiménez, G.; Chagolla-Inzunza, E.; González-Figueroa, J. L.;
+Magaña-Barocio, C. N.; and Fraga-Lopez, M. G. (2026), "ADR1D: A reproducible
+one-dimensional contaminant-transport benchmark," version 1.0.0,
+https://github.com/gstinoco/ADR1D, licensed under CC BY 4.0.
+
+Scope exclusions
+----------------
+
+The CC BY 4.0 license in this file does not apply to:
+
+- data_processed/wqp_nm_stream_nutrients_2022_2026_observations.csv
+- data_processed/wqp_nm_stream_nutrients_2022_2026_model_ready.csv
+- data_processed/wqp_nm_stream_nutrients_2022_2026_stations.csv
+- profile photographs and other visual assets under docs/team/
+- third-party names, logos, trademarks, badges, publications, or linked
+  materials
+
+The WQP-derived tables contain publicly accessible source observations from
+the Water Quality Portal and its contributing organizations. The repository
+authors license neither those source observations nor third-party rights. Users
+must preserve provenance, cite the Water Quality Portal, and consult the source
+metadata for their intended use.
+
+Disclaimer
+----------
+
+The licensed material is provided as-is, without warranties. Users remain
+responsible for determining whether the material and any third-party records
+are suitable and legally available for their intended use.
