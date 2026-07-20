@@ -161,13 +161,13 @@ $$
 
 | Symbol | Meaning | Unit |
 |---|---|---|
-| $C(x,t)$ | Dissolved concentration | mg L$^{-1}$ |
+| $C(x,t)$ | Dissolved concentration | mg L<sup>-1</sup> |
 | $x$ | Distance from the inlet | m |
 | $t$ | Elapsed time | s |
-| $v$ | Effective advective velocity | m s$^{-1}$ |
-| $D$ | Longitudinal hydrodynamic dispersion coefficient | m$^2$ s$^{-1}$ |
+| $v$ | Effective advective velocity | m s<sup>-1</sup> |
+| $D$ | Longitudinal hydrodynamic dispersion coefficient | m<sup>2</sup> s<sup>-1</sup> |
 | $R$ | Linear equilibrium retardation factor | dimensionless |
-| $\lambda$ | First-order decay coefficient | s$^{-1}$ |
+| $\lambda$ | First-order decay coefficient | s<sup>-1</sup> |
 
 The initial condition is
 
@@ -211,12 +211,12 @@ $$
 \begin{aligned}
 S(x,t)={}&\frac{1}{2}
 \exp\!\left(\frac{(v-u)x}{2D}\right)
-\operatorname{erfc}\!\left(
+\mathrm{erfc}\!\left(
 \frac{Rx-ut}{2\sqrt{DRt}}
 \right)\\
 &+\frac{1}{2}
 \exp\!\left(\frac{(v+u)x}{2D}\right)
-\operatorname{erfc}\!\left(
+\mathrm{erfc}\!\left(
 \frac{Rx+ut}{2\sqrt{DRt}}
 \right),
 \end{aligned}
@@ -263,9 +263,9 @@ are fixed exactly at their neutral values.
 | Regime | Retardation factor $R$ | Decay coefficient $\lambda$ | Train | Validation | Test |
 |---|---:|---:|---:|---:|---:|
 | `conservative` | 1 | 0 | 53 | 11 | 11 |
-| `decay_only` | 1 | sampled, $>0$ | 53 | 11 | 11 |
-| `retardation_only` | sampled, $>1$ | 0 | 52 | 12 | 11 |
-| `retardation_and_decay` | sampled, $>1$ | sampled, $>0$ | 52 | 11 | 12 |
+| `decay_only` | 1 | sampled, &gt;0 | 53 | 11 | 11 |
+| `retardation_only` | sampled, &gt;1 | 0 | 52 | 12 | 11 |
+| `retardation_and_decay` | sampled, &gt;1 | sampled, &gt;0 | 52 | 11 | 12 |
 | **Total** |  |  | **210** | **45** | **45** |
 
 ### Parameter design
@@ -277,11 +277,11 @@ values were independently shuffled before the dimensions were combined.
 
 | Parameter | Symbol | Design range | Scale |
 |---|---|---:|---|
-| Advective velocity | $v$ | 0.05-0.35 m s$^{-1}$ | linear |
-| Dispersion coefficient | $D$ | 1-20 m$^2$ s$^{-1}$ | logarithmic |
+| Advective velocity | $v$ | 0.05-0.35 m s<sup>-1</sup> | linear |
+| Dispersion coefficient | $D$ | 1-20 m<sup>2</sup> s<sup>-1</sup> | logarithmic |
 | Retardation factor, when active | $R$ | 1.1-3.0 | linear |
-| Decay coefficient, when active | $\lambda$ | $10^{-7}$-$2\times10^{-5}$ s$^{-1}$ | logarithmic |
-| Source concentration | $C_0$ | 0.2-5.0 mg L$^{-1}$ | logarithmic |
+| Decay coefficient, when active | $\lambda$ | 10<sup>-7</sup>-2&times;10<sup>-5</sup> s<sup>-1</sup> | logarithmic |
+| Source concentration | $C_0$ | 0.2-5.0 mg L<sup>-1</sup> | logarithmic |
 | Pulse start time | $t_0$ | 0-3,600 s | linear |
 | Pulse duration | $\tau$ | 1,800-10,800 s | linear |
 
@@ -294,7 +294,7 @@ version `1.0.0` are:
 | `velocity_m_s` | 0.0502795 | 0.349056 |
 | `dispersion_m2_s` | 1.00072 | 19.8959 |
 | `retardation_factor` | 1 | 2.99246 |
-| `decay_rate_s_1` | 0 | $1.98670\times10^{-5}$ |
+| `decay_rate_s_1` | 0 | 1.98670&times;10<sup>-5</sup> |
 | `source_concentration_mg_L` | 0.200193 | 4.99548 |
 | `source_start_s` | 9.27389 | 3,590.29 |
 | `source_duration_s` | 1,870.87 | 10,793.29 |
@@ -362,10 +362,10 @@ $$
 C_{\mathrm{raw}}=\max(0,C_{\mathrm{true}}+\epsilon).
 $$
 
-A synthetic detection limit of 0.01 mg L$^{-1}$ is then applied. If
-$C_{\mathrm{raw}}<0.01$ mg L$^{-1}$, the reported concentration is 0.005 mg
-L$^{-1}$ and `is_below_detection_limit=true`; otherwise the reported value is
-$C_{\mathrm{raw}}`. The independent noise seed is `20260715`.
+A synthetic detection limit of 0.01 mg L<sup>-1</sup> is then applied. If
+$C_{\mathrm{raw}}<0.01$ mg L<sup>-1</sup>, the reported concentration is 0.005 mg
+L<sup>-1</sup> and `is_below_detection_limit=true`; otherwise the reported value is
+$C_{\mathrm{raw}}$. The independent noise seed is `20260715`.
 
 Overall, 73,405 of 88,200 observations (83.23%) fall below the synthetic
 detection limit. This high proportion is expected because the complete time
@@ -396,11 +396,11 @@ One row describes one complete physical scenario.
 | `final_time_s` | numeric | s | End of the sampled time window. |
 | `time_nodes` | integer | - | Number of sampled times. |
 | `time_step_s` | numeric | s | Time between adjacent outputs. |
-| `velocity_m_s` | numeric | m s$^{-1}$ | Effective advective velocity $v$. |
-| `dispersion_m2_s` | numeric | m$^2$ s$^{-1}$ | Longitudinal dispersion coefficient $D$. |
+| `velocity_m_s` | numeric | m s<sup>-1</sup> | Effective advective velocity $v$. |
+| `dispersion_m2_s` | numeric | m<sup>2</sup> s<sup>-1</sup> | Longitudinal dispersion coefficient $D$. |
 | `retardation_factor` | numeric | dimensionless | Linear retardation factor $R$. |
-| `decay_rate_s_1` | numeric | s$^{-1}$ | First-order decay coefficient $\lambda$. |
-| `source_concentration_mg_L` | numeric | mg L$^{-1}$ | Inlet concentration $C_0$ during the pulse. |
+| `decay_rate_s_1` | numeric | s<sup>-1</sup> | First-order decay coefficient $\lambda$. |
+| `source_concentration_mg_L` | numeric | mg L<sup>-1</sup> | Inlet concentration $C_0$ during the pulse. |
 | `source_start_s` | numeric | s | Pulse start time $t_0$. |
 | `source_duration_s` | numeric | s | Pulse duration $\tau$. |
 | `source_end_s` | numeric | s | Derived pulse end, $t_0+\tau$. |
@@ -419,7 +419,7 @@ Each row is one analytical concentration at a scenario, time, and position.
 | `split` | category | - | Scenario-level data partition. |
 | `time_s` | numeric | s | Elapsed time. |
 | `x_m` | numeric | m | Distance from the inlet. |
-| `concentration_mg_L` | numeric | mg L$^{-1}$ | Noise-free analytical concentration $C(x,t)$. |
+| `concentration_mg_L` | numeric | mg L<sup>-1</sup> | Noise-free analytical concentration $C(x,t)$. |
 | `normalized_concentration` | numeric | dimensionless | $C(x,t)/C_0$ for the corresponding scenario. |
 
 ### `synthetic_adr1d_sensor_observations.csv`
@@ -434,10 +434,10 @@ Each row is one virtual-sensor observation.
 | `sensor_id` | category | - | Fixed virtual-sensor identifier, `S01`-`S06`. |
 | `x_m` | numeric | m | Sensor position measured from the inlet. |
 | `time_s` | numeric | s | Synthetic sampling time. |
-| `concentration_true_mg_L` | numeric | mg L$^{-1}$ | Noise-free analytical concentration. |
-| `noise_std_mg_L` | numeric | mg L$^{-1}$ | Gaussian standard deviation used for the observation. |
-| `concentration_observed_mg_L` | numeric | mg L$^{-1}$ | Nonnegative noisy value after applying the detection-limit rule. |
-| `detection_limit_mg_L` | numeric | mg L$^{-1}$ | Synthetic reporting limit, fixed at 0.01. |
+| `concentration_true_mg_L` | numeric | mg L<sup>-1</sup> | Noise-free analytical concentration. |
+| `noise_std_mg_L` | numeric | mg L<sup>-1</sup> | Gaussian standard deviation used for the observation. |
+| `concentration_observed_mg_L` | numeric | mg L<sup>-1</sup> | Nonnegative noisy value after applying the detection-limit rule. |
+| `detection_limit_mg_L` | numeric | mg L<sup>-1</sup> | Synthetic reporting limit, fixed at 0.01. |
 | `is_below_detection_limit` | boolean | - | Whether the value before reporting substitution was below the limit. |
 
 ## :twisted_rightwards_arrows: ADR1D Partitions and Leakage Prevention
@@ -511,7 +511,7 @@ test = field_with_parameters[field_with_parameters["split"] == "test"]
   samples.
 - Treat `concentration_true_mg_L` as a noise-free target and
   `concentration_observed_mg_L` as a reported synthetic measurement.
-- Do not interpret the substituted value 0.005 mg L$^{-1}$ as an exact
+- Do not interpret the substituted value 0.005 mg L<sup>-1</sup> as an exact
   measurement. Retain `is_below_detection_limit` in analyses of censored data.
 - Report performance by transport regime in addition to aggregate metrics.
 - Account for the 83.23% below-limit proportion in arrival-detection or
@@ -537,10 +537,10 @@ generation workflow checked:
 
 The canonical validation completed with status `ok`. The maximum absolute
 error among the independently recalculated analytical values was below
-$1.7\times10^{-10}$ mg L$^{-1}$. The initial-condition and inlet-boundary
+1.7&times;10<sup>-10</sup> mg L<sup>-1</sup>. The initial-condition and inlet-boundary
 errors were zero at the stored output points. The maximum absolute PDE residual
-was $4.79\times10^{-7}$ mg L$^{-1}$ s$^{-1}$, and the 99th percentile of the
-relative residual was $3.03\times10^{-4}$.
+was 4.79&times;10<sup>-7</sup> mg L<sup>-1</sup> s<sup>-1</sup>, and the 99th percentile of the
+relative residual was 3.03&times;10<sup>-4</sup>.
 
 ## :lock: File Integrity
 
