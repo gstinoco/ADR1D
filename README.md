@@ -10,7 +10,7 @@
 
 ### :link: Quick Links
 
-[![Repository](https://img.shields.io/badge/Code-Repository-181717?logo=github)](https://github.com/gstinoco/ADR1D) [![Overview](https://img.shields.io/badge/Overview-Start-2E8B57)](#star2-overview) [![Data](https://img.shields.io/badge/Data-Structure-1F6F8B)](#open_file_folder-repository-structure) [![Model](https://img.shields.io/badge/ADR1D-Model-6F42C1)](#books-adr1d-scientific-model) [![WQP](https://img.shields.io/badge/WQP-Observations-3B6EA8)](#ocean-wqp-observational-component) [![Validation](https://img.shields.io/badge/Quality-Validation-2E8B57)](#white_check_mark-validation--quality-control) [![Citation](https://img.shields.io/badge/Use-Citation-7B5B3A)](#memo-how-to-cite) [![Team](https://img.shields.io/badge/People-Research%20Team-1F6F8B)](#scientist-research-team) [![Contact](https://img.shields.io/badge/Support-Contact-3B6EA8)](#email-contact--support)
+[![Repository](https://img.shields.io/badge/Code-Repository-181717?logo=github)](https://github.com/gstinoco/ADR1D) [![Overview](https://img.shields.io/badge/Overview-Start-2E8B57)](#star2-overview) [![Data](https://img.shields.io/badge/Data-Structure-1F6F8B)](#open_file_folder-repository-structure) [![Model](https://img.shields.io/badge/ADR1D-Model-6F42C1)](#books-adr1d-scientific-model) [![WQP](https://img.shields.io/badge/WQP-Observations-3B6EA8)](#ocean-wqp-observational-component) [![Validation](https://img.shields.io/badge/Quality-Validation-2E8B57)](#white_check_mark-validation--quality-control) [![Citation](https://img.shields.io/badge/Use-Citation-7B5B3A)](#memo-how-to-cite) [![Team](https://img.shields.io/badge/People-Research%20Team-1F6F8B)](#scientist-research-team) [![Partners](https://img.shields.io/badge/Partners-Innovation-0B1B3A)](#factory-industry-partners-supporting-innovation) [![Contact](https://img.shields.io/badge/Support-Contact-3B6EA8)](#email-contact--support)
 
 </div>
 
@@ -33,6 +33,7 @@
 - [How to Cite](#memo-how-to-cite)
 - [Scientific References](#books-scientific-references)
 - [Research Team](#scientist-research-team)
+- [Industry Partners](#factory-industry-partners-supporting-innovation)
 - [License and Rights](#page_facing_up-license--rights)
 - [Acknowledgments](#pray-acknowledgments)
 - [Contact and Support](#email-contact--support)
@@ -933,11 +934,13 @@ source-organization attribution in derived archives.
 
 <div align="center">
 
-### :star2: Authors and Curators
+### :star2: Meet the Team
 
-*Numerical modeling, environmental data curation, and reproducible scientific computing*
+*Researchers and students advancing traceable environmental data and reproducible transport benchmarks*
 
 </div>
+
+### :busts_in_silhouette: Main Researchers
 
 <table align="center">
   <thead>
@@ -966,7 +969,7 @@ source-organization attribution in derived archives.
       </td>
       <td><b>Francisco J. Domínguez-Mota</b><br/><sub>Applied mathematics and numerical methods</sub></td>
       <td><a href="https://umich.mx/"><img alt="University: UMSNH" src="https://img.shields.io/badge/University-UMSNH-1A3A6B"></a></td>
-      <td><a href="https://orcid.org/0000-0001-6837-172X"><img alt="ORCID 0000-0001-6837-172X" src="https://img.shields.io/badge/ORCID-0000--0001--6837--172X-A6CE39?logo=orcid"></a></td>
+      <td><a href="mailto:francisco.mota@umich.mx"><img alt="Email Francisco J. Domínguez-Mota" src="https://img.shields.io/badge/Email-Contact-3B6EA8"></a><br/><a href="https://orcid.org/0000-0001-6837-172X"><img alt="ORCID 0000-0001-6837-172X" src="https://img.shields.io/badge/ORCID-0000--0001--6837--172X-A6CE39?logo=orcid"></a></td>
     </tr>
     <tr>
       <td align="center" width="120">
@@ -974,20 +977,20 @@ source-organization attribution in derived archives.
       </td>
       <td><b>J. Alberto Guzmán-Torres</b><br/><sub>Engineering applications and artificial intelligence</sub></td>
       <td><a href="https://umich.mx/"><img alt="University: UMSNH" src="https://img.shields.io/badge/University-UMSNH-1A3A6B"></a></td>
-      <td><a href="https://orcid.org/0000-0002-9309-9390"><img alt="ORCID 0000-0002-9309-9390" src="https://img.shields.io/badge/ORCID-0000--0002--9309--9390-A6CE39?logo=orcid"></a></td>
+      <td><a href="mailto:jose.alberto.guzman@umich.mx"><img alt="Email J. Alberto Guzmán-Torres" src="https://img.shields.io/badge/Email-Contact-3B6EA8"></a><br/><a href="https://orcid.org/0000-0002-9309-9390"><img alt="ORCID 0000-0002-9309-9390" src="https://img.shields.io/badge/ORCID-0000--0002--9309--9390-A6CE39?logo=orcid"></a></td>
     </tr>
   </tbody>
 </table>
 
-### :mortar_board: Graduate and Undergraduate Student Authors
+### :mortar_board: Ph.D. Research Students
 
 <table align="center">
   <thead>
     <tr>
       <th align="center" width="120">Photo</th>
       <th align="left">Student</th>
-      <th align="left">Academic level</th>
-      <th align="left">Affiliation</th>
+      <th align="left">Institution</th>
+      <th align="left">Contact</th>
     </tr>
   </thead>
   <tbody>
@@ -995,43 +998,111 @@ source-organization attribution in derived archives.
       <td align="center" width="120">
         <img src="docs/team/gpj.webp" alt="Gabriela Pedraza-Jiménez" width="96" height="96" style="border-radius: 50%;">
       </td>
-      <td><b>Gabriela Pedraza-Jiménez</b></td>
-      <td><img alt="Ph.D. research student" src="https://img.shields.io/badge/Ph.D.-Research%20Student-2E8B57"></td>
+      <td><b>Gabriela Pedraza-Jiménez</b><br/><img alt="Ph.D. research student" src="https://img.shields.io/badge/Ph.D.-Research%20Student-2E8B57?style=flat-square"></td>
       <td><a href="https://umich.mx/"><img alt="University: UMSNH" src="https://img.shields.io/badge/University-UMSNH-1A3A6B"></a></td>
+      <td><a href="mailto:2220157h@umich.mx"><img alt="Email Gabriela Pedraza-Jiménez" src="https://img.shields.io/badge/Email-Contact-3B6EA8"></a></td>
     </tr>
     <tr>
       <td align="center" width="120">
         <img src="docs/team/eci.webp" alt="Eli Chagolla-Inzunza" width="96" height="96" style="border-radius: 50%;">
       </td>
-      <td><b>Eli Chagolla-Inzunza</b></td>
-      <td><img alt="Ph.D. research student" src="https://img.shields.io/badge/Ph.D.-Research%20Student-2E8B57"></td>
+      <td><b>Eli Chagolla-Inzunza</b><br/><img alt="Ph.D. research student" src="https://img.shields.io/badge/Ph.D.-Research%20Student-2E8B57?style=flat-square"></td>
       <td><a href="https://umich.mx/"><img alt="University: UMSNH" src="https://img.shields.io/badge/University-UMSNH-1A3A6B"></a></td>
+      <td><a href="mailto:1137626b@umich.mx"><img alt="Email Eli Chagolla-Inzunza" src="https://img.shields.io/badge/Email-Contact-3B6EA8"></a></td>
     </tr>
+  </tbody>
+</table>
+
+### :mortar_board: M.Sc. Research Students
+
+<table align="center">
+  <thead>
+    <tr>
+      <th align="center" width="120">Photo</th>
+      <th align="left">Student</th>
+      <th align="left">Institution</th>
+      <th align="left">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td align="center" width="120">
         <img src="docs/team/jlgf.webp" alt="Jorge L. González-Figueroa" width="96" height="96" style="border-radius: 50%;">
       </td>
-      <td><b>Jorge L. González-Figueroa</b></td>
-      <td><img alt="M.Sc. research student" src="https://img.shields.io/badge/M.Sc.-Research%20Student-3B6EA8"></td>
+      <td><b>Jorge L. González-Figueroa</b><br/><img alt="M.Sc. research student" src="https://img.shields.io/badge/M.Sc.-Research%20Student-3B6EA8?style=flat-square"></td>
       <td><a href="https://umich.mx/"><img alt="University: UMSNH" src="https://img.shields.io/badge/University-UMSNH-1A3A6B"></a></td>
+      <td><a href="mailto:1718717h@umich.mx"><img alt="Email Jorge L. González-Figueroa" src="https://img.shields.io/badge/Email-Contact-3B6EA8"></a></td>
     </tr>
     <tr>
       <td align="center" width="120">
         <img src="docs/team/cnmb.webp" alt="Christopher N. Magaña-Barocio" width="96" height="96" style="border-radius: 50%;">
       </td>
-      <td><b>Christopher N. Magaña-Barocio</b></td>
-      <td><img alt="M.Sc. research student" src="https://img.shields.io/badge/M.Sc.-Research%20Student-3B6EA8"></td>
+      <td><b>Christopher N. Magaña-Barocio</b><br/><img alt="M.Sc. research student" src="https://img.shields.io/badge/M.Sc.-Research%20Student-3B6EA8?style=flat-square"></td>
       <td><a href="https://umich.mx/"><img alt="University: UMSNH" src="https://img.shields.io/badge/University-UMSNH-1A3A6B"></a></td>
+      <td><a href="mailto:1339846k@umich.mx"><img alt="Email Christopher N. Magaña-Barocio" src="https://img.shields.io/badge/Email-Contact-3B6EA8"></a></td>
     </tr>
+  </tbody>
+</table>
+
+### :mortar_board: Undergraduate Research Students
+
+<table align="center">
+  <thead>
+    <tr>
+      <th align="center" width="120">Photo</th>
+      <th align="left">Student</th>
+      <th align="left">Institution</th>
+      <th align="left">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td align="center" width="120">
         <img src="docs/team/mgfl.webp" alt="Maria Goretti Fraga-Lopez" width="96" height="96" style="border-radius: 50%;">
       </td>
-      <td><b>Maria Goretti Fraga-Lopez</b></td>
-      <td><img alt="Undergraduate research student" src="https://img.shields.io/badge/Undergraduate-Research%20Student-7B5B3A"></td>
+      <td><b>Maria Goretti Fraga-Lopez</b><br/><img alt="Undergraduate research student" src="https://img.shields.io/badge/Undergraduate-Research%20Student-7B5B3A?style=flat-square"></td>
       <td><a href="https://umich.mx/"><img alt="University: UMSNH" src="https://img.shields.io/badge/University-UMSNH-1A3A6B"></a></td>
+      <td><a href="mailto:1702174b@umich.mx"><img alt="Email Maria Goretti Fraga-Lopez" src="https://img.shields.io/badge/Email-Contact-3B6EA8"></a></td>
     </tr>
   </tbody>
+</table>
+
+Student contributors are recognized for their participation in the broader
+research program. Formal dataset citation and copyright attribution remain
+limited to the three principal researchers listed in the citation section and
+the license file.
+
+---
+
+## :factory: Industry Partners Supporting Innovation
+
+<div align="center">
+
+### :star2: Academic-Industry Collaboration
+
+*Connecting reproducible environmental data with applied engineering and technology transfer*
+
+</div>
+
+<table align="center" width="70%">
+  <tr>
+    <td valign="top" style="border: 1px solid #d0d7de; border-radius: 8px; padding: 16px;">
+      <div align="center">
+        <a href="https://www.siiia.com.mx/"><img src="docs/partners/siiia.webp" alt="SIIIA MATH institutional logo" width="240"></a><br/><br/>
+        <b>SIIIA MATH</b><br/>
+        <sub>Soluciones en Ingeniería</sub><br/><br/>
+        <a href="https://www.siiia.com.mx/"><img alt="SIIIA MATH website" src="https://img.shields.io/badge/Website-SIIIA%20MATH-0B1B3A?style=for-the-badge"></a>
+        <img alt="Partnership type" src="https://img.shields.io/badge/Type-R%26D%20and%20Engineering-457B9D?style=flat-square">
+      </div>
+      <br/>
+      <b>Focus areas</b>
+      <ul>
+        <li>Mathematical modeling and scientific computing</li>
+        <li>Environmental data products and reproducible benchmarks</li>
+        <li>Applied research, development, and technology transfer</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 ---
@@ -1054,22 +1125,29 @@ License scope must be read by component:
 The licenses of methodological publications do not determine the rights of
 either dataset component.
 
+Institutional emblems and logos under `docs/partners/` remain the property of
+their respective organizations. They are used solely for identification and
+acknowledgment and are not covered by the repository's `CC BY 4.0` license.
+
 ---
 
 ## :pray: Acknowledgments
 
 <div align="center">
 
-### :heart: Institutional and Financial Support
+### :heart: Special Thanks
 
 *We thank the institutions and partners whose continuing support sustains this research, its public data products, and student participation.*
 
 </div>
 
+### :classical_building: Institutional Support
+
 <table align="center" width="100%" cellspacing="12">
   <tr>
     <td width="50%" valign="top" style="border: 1px solid #d0d7de; border-radius: 8px; padding: 16px;">
       <div align="center">
+        <a href="https://umich.mx/"><img src="docs/partners/umsnh.webp" alt="UMSNH institutional emblem" width="180"></a><br/><br/>
         <b>Universidad Michoacana de San Nicolás de Hidalgo</b><br/>
         <sub>UMSNH · Academic institution · Mexico</sub><br/><br/>
         <a href="https://umich.mx/"><img alt="UMSNH website" src="https://img.shields.io/badge/Website-UMSNH-7A0019?style=flat-square"></a>
@@ -1085,6 +1163,7 @@ either dataset component.
     </td>
     <td width="50%" valign="top" style="border: 1px solid #d0d7de; border-radius: 8px; padding: 16px;">
       <div align="center">
+        <a href="https://secihti.mx/"><img src="docs/partners/secihti.webp" alt="SECIHTI institutional logo" width="180"></a><br/><br/>
         <b>Secretaría de Ciencia, Humanidades, Tecnología e Innovación</b><br/>
         <sub>SECIHTI · Federal science agency · Mexico</sub><br/><br/>
         <a href="https://secihti.mx/"><img alt="SECIHTI website" src="https://img.shields.io/badge/Website-SECIHTI-2D6A4F?style=flat-square"></a>
@@ -1102,11 +1181,12 @@ either dataset component.
   <tr>
     <td width="50%" valign="top" style="border: 1px solid #d0d7de; border-radius: 8px; padding: 16px;">
       <div align="center">
+        <a href="https://cimne.com/"><img src="docs/partners/cimne.webp" alt="CIMNE institutional logo" width="180"></a><br/><br/>
         <b>International Centre for Numerical Methods in Engineering</b><br/>
-        <sub>CIMNE and Aula CIMNE Morelia · Research collaboration</sub><br/><br/>
+        <sub>CIMNE · Research center and international collaboration</sub><br/><br/>
         <a href="https://cimne.com/"><img alt="CIMNE website" src="https://img.shields.io/badge/Website-CIMNE-EE9B00?style=flat-square"></a>
-        <a href="https://aulas.cimne.com/aula/aula-morelia/"><img alt="Aula CIMNE Morelia" src="https://img.shields.io/badge/Aula-CIMNE%20Morelia-CA6702?style=flat-square"></a>
-        <img alt="Support type" src="https://img.shields.io/badge/Support-Collaboration%20%26%20Training-BB3E03?style=flat-square">
+        <img alt="Institution type" src="https://img.shields.io/badge/Type-Research%20Center-BB3E03?style=flat-square">
+        <img alt="Support type" src="https://img.shields.io/badge/Support-Collaboration%20%26%20Training-CA6702?style=flat-square">
       </div>
       <br/>
       <b>Support provided</b>
@@ -1117,8 +1197,9 @@ either dataset component.
     </td>
     <td width="50%" valign="top" style="border: 1px solid #d0d7de; border-radius: 8px; padding: 16px;">
       <div align="center">
+        <a href="https://www.siiia.com.mx/"><img src="docs/partners/siiia.webp" alt="SIIIA MATH institutional logo" width="180"></a><br/><br/>
         <b>SIIIA MATH: Soluciones en Ingeniería</b><br/>
-        <sub>Engineering and innovation partner · Mexico</sub><br/><br/>
+        <sub>Engineering and innovation partner</sub><br/><br/>
         <a href="https://www.siiia.com.mx/"><img alt="SIIIA MATH website" src="https://img.shields.io/badge/Website-SIIIA%20MATH-0B1B3A?style=flat-square"></a>
         <img alt="Institution type" src="https://img.shields.io/badge/Type-Industry%20Partner-1D3557?style=flat-square">
         <img alt="Support type" src="https://img.shields.io/badge/Support-Funding%20%26%20Transfer-457B9D?style=flat-square">
@@ -1128,6 +1209,43 @@ either dataset component.
       <ul>
         <li>Applied research and engineering development</li>
         <li>Financial support and technology-transfer perspective</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+### :building_with_garden: Research Centers & Collaborations
+
+<table align="center" width="100%" cellspacing="12">
+  <tr>
+    <td width="50%" valign="top" style="border: 1px solid #d0d7de; border-radius: 8px; padding: 16px;">
+      <div align="center">
+        <a href="https://aulas.cimne.com/aula/aula-morelia/"><img src="docs/partners/cimne.webp" alt="CIMNE institutional logo" width="180"></a><br/><br/>
+        <b>Aula CIMNE Morelia</b><br/>
+        <sub>Research collaboration and training space</sub><br/><br/>
+        <a href="https://aulas.cimne.com/aula/aula-morelia/"><img alt="Aula CIMNE Morelia website" src="https://img.shields.io/badge/Website-Aula%20CIMNE%20Morelia-CA6702?style=flat-square"></a>
+        <img alt="Research area" src="https://img.shields.io/badge/Area-Numerical%20Methods-EE9B00?style=flat-square">
+      </div>
+      <br/>
+      <b>Collaboration highlights</b>
+      <ul>
+        <li>Numerical methods and computational engineering environment</li>
+        <li>Research exchange and reproducible-computing training</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top" style="border: 1px solid #d0d7de; border-radius: 8px; padding: 16px;">
+      <div align="center">
+        <a href="https://umich.mx/"><img src="docs/partners/umsnh.webp" alt="UMSNH institutional emblem" width="180"></a><br/><br/>
+        <b>Coordinación de la Investigación Científica</b><br/>
+        <sub>CIC-UMSNH · Institutional research coordination</sub><br/><br/>
+        <a href="https://umich.mx/"><img alt="UMSNH website" src="https://img.shields.io/badge/Institution-UMSNH-7A0019?style=flat-square"></a>
+        <img alt="Support area" src="https://img.shields.io/badge/Support-Research%20Development-2E8B57?style=flat-square">
+      </div>
+      <br/>
+      <b>Collaboration highlights</b>
+      <ul>
+        <li>Institutional coordination for scientific research</li>
+        <li>Support for data curation, documentation, and public dissemination</li>
       </ul>
     </td>
   </tr>
@@ -1153,6 +1271,17 @@ either dataset component.
     </td>
   </tr>
 </table>
+
+### :computer: Technology Communities
+
+<div align="center">
+
+| :package: Framework | :busts_in_silhouette: Community | :star: Contribution |
+|:---:|:---:|:---:|
+| [![Python](https://img.shields.io/badge/Python-Data%20Workflows-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) | **Python Community** | Reproducible data-access and analysis examples |
+| [![pandas](https://img.shields.io/badge/pandas-Tabular%20Data-150458?style=flat-square&logo=pandas)](https://pandas.pydata.org/) | **pandas Community** | CSV inspection, filtering, and analysis |
+
+</div>
 
 ---
 
