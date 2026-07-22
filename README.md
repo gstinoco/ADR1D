@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-gstinoco%2FADR1D-181717.svg?logo=github)](https://github.com/gstinoco/ADR1D) [![Data: CSV](https://img.shields.io/badge/Data-6%20CSV%20files-1F6F8B.svg)](data_processed/) [![ADR1D](https://img.shields.io/badge/ADR1D-v1.0.0-2E8B57.svg)](#books-adr1d-scientific-model) [![WQP snapshot](https://img.shields.io/badge/WQP%20snapshot-2026--07--14-3B6EA8.svg)](https://www.waterqualitydata.us/) [![Validation](https://img.shields.io/badge/Validation-passed-2E8B57.svg)](#white_check_mark-validation--quality-control) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-D4AF37.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-gstinoco%2FADR1D-181717.svg?logo=github)](https://github.com/gstinoco/ADR1D) [![Data: CSV](https://img.shields.io/badge/Data-6%20CSV%20files-1F6F8B.svg)](data_processed/) [![ADR1D](https://img.shields.io/badge/ADR1D-v1.0.0-2E8B57.svg)](#books-adr1d-scientific-model) [![WQP snapshot](https://img.shields.io/badge/WQP%20snapshot-2026--07--14-3B6EA8.svg)](https://www.waterqualitydata.us/) [![Validation](https://img.shields.io/badge/Validation-passed-2E8B57.svg)](#white_check_mark-validation--quality-control) [![ADR1D license: CC BY 4.0](https://img.shields.io/badge/ADR1D%20license-CC%20BY%204.0-D4AF37.svg)](LICENSE)
 
 **A reproducible analytical benchmark for one-dimensional contaminant transport, accompanied by a provenance-preserving snapshot of public water-quality observations.**
 
@@ -88,6 +88,18 @@ if they shared a physical or statistical population.
 | WQP provenance | NWIS and STORET records | 15 organizations |
 | Format | Comma-separated text with header rows | 6 CSV files |
 
+### :calendar: Release Chronology
+
+| Item | Date |
+|---|---|
+| Scheduled development period | December 1-31, 2024 |
+| Initial public repository release | July 20, 2026 |
+| Last documentation update | July 2026 |
+
+The scheduled development period and the public release record describe
+different stages of the project. Retrieval, validation, repository, and
+citation dates retain the dates on which those operations actually occurred.
+
 ---
 
 ## :open_file_folder: Repository Structure
@@ -95,6 +107,7 @@ if they shared a physical or statistical population.
 ```text
 .
 |-- README.md
+|-- CITATION.cff
 |-- LICENSE
 |-- data_processed/
 |   |-- synthetic_adr1d_scenarios.csv
@@ -177,16 +190,13 @@ $$
 
 At the inlet, a rectangular concentration pulse is prescribed:
 
-$$
-C(0,t)=
-\begin{cases}
-C_0, & t_0 \leq t < t_0+\tau,\\
-0, & \text{otherwise},
-\end{cases}
-$$
+```math
+C(0,t)=C_0\mathbf{1}_{[t_0,t_0+\tau)}(t).
+```
 
 where $C_0$ is the source concentration, $t_0$ is the pulse start time, and
-$\tau$ is its duration. The far-field condition is
+$\tau$ is its duration. The indicator equals one while the source pulse is
+active and zero otherwise. The far-field condition is
 
 $$
 \lim_{x\rightarrow\infty}C(x,t)=0.
@@ -857,10 +867,15 @@ citation:
 
 ### ADR1D
 
+Machine-readable citation metadata are provided in [`CITATION.cff`](CITATION.cff).
+The formal dataset citation includes the three principal researchers; student
+contributors are recognized in the research-team section below.
+
 Please cite the repository as:
 
-> Tinoco-Guerrero, G., Domínguez-Mota, F. J., Guzmán-Torres, J. A.(2026).
-> *ADR1D: A reproducible one-dimensional contaminant-transport benchmark*
+> Tinoco-Guerrero, G., Domínguez-Mota, F. J., & Guzmán-Torres, J. A. (2026).
+> *ADR1D and WQP-NM-Nutrients: A reproducible contaminant-transport benchmark
+> and curated water-quality snapshot*
 > (Version 1.0.0) [Data set]. Universidad Michoacana de San Nicolás de Hidalgo.
 > https://github.com/gstinoco/ADR1D
 
@@ -871,8 +886,9 @@ BibTeX:
   author    = {Tinoco-Guerrero, Gerardo and
                Domínguez-Mota, Francisco J. and
                Guzmán-Torres, J. Alberto},
-  title     = {{ADR1D}: A Reproducible One-Dimensional
-               Contaminant-Transport Benchmark},
+  title     = {{ADR1D} and {WQP-NM-Nutrients}: A Reproducible
+               Contaminant-Transport Benchmark and Curated
+               Water-Quality Snapshot},
   year      = {2026},
   publisher = {Universidad Michoacana de San Nicolás de Hidalgo},
   note      = {Data set, version 1.0.0},

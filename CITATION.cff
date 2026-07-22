@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: >-
+  Please cite this dataset release and the Water Quality Portal source. CC BY
+  4.0 applies only to the author-generated ADR1D data and documentation; see
+  LICENSE for scope exclusions.
+title: "ADR1D and WQP-NM-Nutrients: A Reproducible Contaminant-Transport Benchmark and Curated Water-Quality Snapshot"
+type: dataset
+version: 1.0.0
+date-released: 2026-07-20
+repository-artifact: "https://github.com/gstinoco/ADR1D"
+url: "https://github.com/gstinoco/ADR1D"
+abstract: >-
+  This dataset release combines two separate and complementary resources for
+  data-driven studies of contaminant transport and water quality. ADR1D is a
+  synthetic one-dimensional analytical benchmark containing 300 transport
+  scenarios, complete space-time concentration fields, fixed scenario-level
+  partitions, and noisy virtual-sensor observations. WQP-NM-Nutrients is a
+  provenance-preserving snapshot of 9,932 publicly accessible nutrient
+  observations from streams in New Mexico retrieved from the Water Quality
+  Portal on July 14, 2026. The components are distributed as six documented
+  CSV files and must not be interpreted as observations from the same physical
+  or statistical system.
+authors:
+  - family-names: Tinoco-Guerrero
+    given-names: Gerardo
+    email: gerardo.tinoco@umich.mx
+    orcid: "https://orcid.org/0000-0003-3119-770X"
+    affiliation: "Universidad Michoacana de San Nicolás de Hidalgo"
+  - family-names: Domínguez-Mota
+    given-names: Francisco J.
+    orcid: "https://orcid.org/0000-0001-6837-172X"
+    affiliation: "Universidad Michoacana de San Nicolás de Hidalgo"
+  - family-names: Guzmán-Torres
+    given-names: J. Alberto
+    orcid: "https://orcid.org/0000-0002-9309-9390"
+    affiliation: "Universidad Michoacana de San Nicolás de Hidalgo"
+keywords:
+  - contaminant transport
+  - advection-dispersion-reaction
+  - analytical benchmark
+  - water quality
+  - Water Quality Portal
+  - machine learning
+  - reproducible research
+  - New Mexico
+references:
+  - type: data
+    title: "Water Quality Portal"
+    authors:
+      - name: "National Water Quality Monitoring Council"
+    year: 2026
+    doi: "10.5066/P9QRKUVJ"
