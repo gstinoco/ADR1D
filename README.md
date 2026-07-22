@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-gstinoco%2FADR1D-181717.svg?logo=github)](https://github.com/gstinoco/ADR1D) [![Data: CSV](https://img.shields.io/badge/Data-6%20CSV%20files-1F6F8B.svg)](data_processed/) [![ADR1D](https://img.shields.io/badge/ADR1D-v1.0.0-2E8B57.svg)](#books-adr1d-scientific-model) [![WQP snapshot](https://img.shields.io/badge/WQP%20snapshot-2026--07--14-3B6EA8.svg)](https://www.waterqualitydata.us/) [![Validation](https://img.shields.io/badge/Validation-passed-2E8B57.svg)](#white_check_mark-validation--quality-control) [![ADR1D license: CC BY 4.0](https://img.shields.io/badge/ADR1D%20license-CC%20BY%204.0-D4AF37.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21499528.svg)](https://doi.org/10.5281/zenodo.21499528) [![GitHub](https://img.shields.io/badge/GitHub-gstinoco%2FADR1D-181717.svg?logo=github)](https://github.com/gstinoco/ADR1D) [![Data: CSV](https://img.shields.io/badge/Data-6%20CSV%20files-1F6F8B.svg)](data_processed/) [![ADR1D](https://img.shields.io/badge/ADR1D-v1.0.0-2E8B57.svg)](#books-adr1d-scientific-model) [![WQP snapshot](https://img.shields.io/badge/WQP%20snapshot-2026--07--14-3B6EA8.svg)](https://www.waterqualitydata.us/) [![Validation](https://img.shields.io/badge/Validation-passed-2E8B57.svg)](#white_check_mark-validation--quality-control) [![ADR1D license: CC BY 4.0](https://img.shields.io/badge/ADR1D%20license-CC%20BY%204.0-D4AF37.svg)](LICENSE)
 
 **A reproducible analytical benchmark for one-dimensional contaminant transport, accompanied by a provenance-preserving snapshot of public water-quality observations.**
 
@@ -877,7 +877,7 @@ Please cite the repository as:
 > *ADR1D and WQP-NM-Nutrients: A reproducible contaminant-transport benchmark
 > and curated water-quality snapshot*
 > (Version 1.0.0) [Data set]. Universidad Michoacana de San Nicolás de Hidalgo.
-> https://github.com/gstinoco/ADR1D
+> https://doi.org/10.5281/zenodo.21499528
 
 BibTeX:
 
@@ -892,7 +892,8 @@ BibTeX:
   year      = {2026},
   publisher = {Universidad Michoacana de San Nicolás de Hidalgo},
   note      = {Data set, version 1.0.0},
-  url       = {https://github.com/gstinoco/ADR1D}
+  doi       = {10.5281/zenodo.21499528},
+  url       = {https://doi.org/10.5281/zenodo.21499528}
 }
 ```
 

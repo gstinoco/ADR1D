@@ -7,6 +7,7 @@ title: "ADR1D and WQP-NM-Nutrients: A Reproducible Contaminant-Transport Benchma
 type: dataset
 version: 1.0.0
 date-released: 2026-07-20
+doi: "10.5281/zenodo.21499528"
 repository-artifact: "https://github.com/gstinoco/ADR1D"
 url: "https://github.com/gstinoco/ADR1D"
 abstract: >-
