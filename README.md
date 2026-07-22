@@ -26,7 +26,7 @@
 - [ADR1D Partitions and Leakage Prevention](#twisted_rightwards_arrows-adr1d-partitions-and-leakage-prevention)
 - [ADR1D Quick Start](#rocket-adr1d-quick-start)
 - [Validation and Quality Control](#white_check_mark-validation--quality-control)
-- [File Integrity](#lock-file-integrity)
+- [Release Identity](#lock-release-identity)
 - [ADR1D Intended Uses](#dart-adr1d-intended-uses)
 - [ADR1D Limitations](#warning-adr1d-limitations-and-out-of-scope-uses)
 - [WQP Observational Component](#ocean-wqp-observational-component)
@@ -69,7 +69,7 @@ if they shared a physical or statistical population.
 - **Environmental context:** WQP records with provider, organization, method,
   qualification, and monitoring-location metadata.
 - **Auditability:** plain-text tables, exact retrieval filters, processing
-  decisions, validation results, and SHA-256 file digests.
+  decisions, validation results, and versioned release metadata.
 
 > **Release:** ADR1D version `1.0.0` and the WQP snapshot were generated or
 > curated and validated before publication. Component-specific rights and WQP
@@ -141,8 +141,7 @@ Use `monitoring_location_id` to join WQP observations to stations. The
 
 This repository is a data-focused distribution. The equations, sampling rules,
 random seeds, WQP queries, processing rules, variable definitions, validation
-results, rights notices, and file digests needed to audit the release are
-documented below.
+results, and rights notices needed to audit the release are documented below.
 
 ---
 
@@ -534,7 +533,7 @@ generation workflow checked:
 - all 88,200 noise-free sensor concentrations;
 - the Gaussian noise model, nonnegativity rule, detection limit, and reporting
   substitution; and
-- file sizes and SHA-256 digests.
+- the dimensions and integrity of the distributed files.
 
 The canonical validation completed with status `ok`. The maximum absolute
 error among the independently recalculated analytical values was below
@@ -543,28 +542,15 @@ errors were zero at the stored output points. The maximum absolute PDE residual
 was 4.79&times;10<sup>-7</sup> mg L<sup>-1</sup> s<sup>-1</sup>, and the 99th percentile of the
 relative residual was 3.03&times;10<sup>-4</sup>.
 
-## :lock: File Integrity
+## :lock: Release Identity
 
-The following digests identify the exact files in this distribution.
-
-| File | Bytes | SHA-256 |
-|---|---:|---|
-| `synthetic_adr1d_scenarios.csv` | 64,244 | `e3a8383aa127787264bd41194e6617c6a5928c30b1f5aa7ba8c8b9a3fb8a5925` |
-| `synthetic_adr1d_field.csv` | 35,830,935 | `24ab6f929410c4f8daf5293fc6a0dd9490919aff9f24fc2623b297d4b090439e` |
-| `synthetic_adr1d_sensor_observations.csv` | 7,711,720 | `7bd3f09b5d1f2f4828a0f45496513074bfed324de6c1d69438a5a453266b297a` |
-| `wqp_nm_stream_nutrients_2022_2026_observations.csv` | 3,623,896 | `9ea1084a4c17196e9cbca4a7399d3930763f1039c0b6701d9de7e02116b30e1a` |
-| `wqp_nm_stream_nutrients_2022_2026_model_ready.csv` | 1,922,865 | `3161e27988beb4d9ff68566cbb2cec22541e7587b04a3be2d3ba0a0e89b6db71` |
-| `wqp_nm_stream_nutrients_2022_2026_stations.csv` | 76,353 | `0cf930d0409515e0bc32ec00e8969d6038e863968c56665c530bc75c8f628ada` |
-
-Example verification on macOS or Linux:
-
-```bash
-shasum -a 256 data_processed/*.csv
-```
+The files under `data_processed/` constitute the dataset snapshot distributed
+with ADR1D version `1.0.0`. Their integrity was checked before publication.
+Repository history and the release version identify this snapshot without
+duplicating low-level integrity values in the public documentation.
 
 Any modification to values, scenario assignments, serialized precision, source
-records, or row ordering changes these digests and should be released under a
-new version.
+records, or row ordering should be published under a new version.
 
 ## :dart: ADR1D Intended Uses
 
@@ -626,8 +612,8 @@ The canonical files were retrieved on July 14, 2026, with these requests:
 - [Monitoring-location summary query](https://www.waterqualitydata.us/data/summary/monitoringLocation/search?statecode=US%3A35&siteType=Stream&characteristicType=Nutrient&mimeType=csv&zip=no&dataProfile=periodOfRecord&summaryYears=5)
 
 WQP is a live service. Repeating these requests can return a different snapshot
-as providers revise or add records. The digests above identify the exact
-processed version distributed here.
+as providers revise or add records. The tables included with ADR1D version
+`1.0.0` constitute the processed snapshot distributed here.
 
 ### Curation method
 
@@ -1376,8 +1362,8 @@ acknowledgment and are not covered by the repository's `CC BY 4.0` license.
   <summary><b>Can a later WQP query reproduce this snapshot exactly?</b></summary>
   <br/>
   Not necessarily. WQP is dynamic and providers may add or revise records. Use
-  the included tables and SHA-256 digests when exact snapshot identity matters;
-  use the documented filters and access date when conducting an updated query.
+  the versioned tables when exact snapshot identity matters; use the documented
+  filters and access date when conducting an updated query.
 </details>
 
 ---
